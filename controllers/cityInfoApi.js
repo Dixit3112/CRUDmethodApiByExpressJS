@@ -16,7 +16,7 @@ let cityInfo = [
     { id: 9, name: "Delhi", population: 30.854e6, area: 573 }
 ];
 
-// Gives result of GET Method
+// Gives result of GET Method by simple coding
 const readCityInfo = async (req, res) => {
     try {
         res.status(200).json({ cityInfo });
