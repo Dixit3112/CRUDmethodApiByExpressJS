@@ -1,0 +1,17 @@
+{
+  "name": "apitry",
+  "version": "1.0.0",
+  "description": "Making API by express JS",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "author": "Dixit Rakholiya",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.4"
+  }
+}
