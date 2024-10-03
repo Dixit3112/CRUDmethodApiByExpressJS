@@ -1,9 +1,3 @@
-// controller file
-// import {Request, Response} from "express";
-
-// const req = Request;
-// const res = Response;
-
 let cityInfo = [
     { id: 1, name: "New York", population: 8.623e6, area: 302.6 },
     { id: 2, name: "Los Angeles", population: 3.983e6, area: 502.7 },
@@ -16,16 +10,14 @@ let cityInfo = [
     { id: 9, name: "Delhi", population: 30.854e6, area: 573 }
 ];
 
-// Gives result of GET Method by simple coding
 const readCityInfo = async (req, res) => {
     try {
-        res.status(200).json({ cityInfo });
+        res.status(200).json(cityInfo);
     } catch (error) {
         res.status(500).json({ msg: error.message });
     }
 };
 
-// Gives result of POST Method
 const addCityInfo = async (req, res) => {
     try {
         const newCityInfo = req.body;
@@ -36,7 +28,6 @@ const addCityInfo = async (req, res) => {
     }
 };
 
-// Gives result of PUT Method
 const updateCityInfo = async (req, res) => {
     try {
         const cityName = req.params.name;
@@ -59,7 +50,6 @@ const updateCityInfo = async (req, res) => {
     }
 };
 
-// Gives result of DELETE Method
 const deleteCityInfo = async (req, res) => {
     try {
         const cityName = req.params.name;
